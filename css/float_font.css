@@ -1,0 +1,60 @@
+
+    html,
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: "微软雅黑 Regular", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+        color: #555;
+    }
+
+    /*字体出现的进度*/
+    .text-block span{
+        display: inline-block;
+        transition: .1s;
+    }
+    .text-animate-0{
+        transform: translate(0px,-60px) rotate(60deg);
+        opacity: 0; 
+    }
+    .text-animate-1{
+        transform: translate(0px,-54px) rotate(54deg);
+        opacity: 0.1; 
+    }
+    .text-animate-2{
+        transform: translate(0px,-48px) rotate(48deg);
+        opacity: 0.2; 
+    }
+    .text-animate-3{
+        transform: translate(0px,-42px) rotate(42deg);
+        opacity: 0.3; 
+    }
+    .text-animate-4{
+        transform: translate(0px,-36px) rotate(36deg);
+        opacity: 0.4; 
+    }
+    .text-animate-5{
+        transform: translate(0px,-30px) rotate(30deg);
+        opacity: 0.5; 
+    }
+    .text-animate-6{
+        transform: translate(0px,-24px) rotate(24deg);
+        opacity: 0.6; 
+    }
+    .text-animate-7{
+        transform: translate(0px,-18px) rotate(18deg);
+        opacity: 0.7; 
+    }
+    .text-animate-8{
+        transform: translate(0px,-12px) rotate(12deg);
+        opacity: 0.8; 
+    }
+    .text-animate-9{
+        transform: translate(0px,-6px) rotate(6deg);
+        opacity: 0.9; 
+    }
+    .text-animate-10{
+        transform: translate(0px,-0px) rotate(0deg);
+        opacity: 1; 
+    }
