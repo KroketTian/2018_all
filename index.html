@@ -29,15 +29,16 @@
     </div> -->
     <!-- 加载页面 -->
     <div id="loadingPage" class="loading-page viticaly-center">
-      <div class=" viticaly-center-block" style="width: 80%;margin-left: 9%;text-align: center;position: relative;">
-
+      <div class="viticaly-center-block" style="width: 80%;margin-left: 9%;text-align: center;position: relative;">
         <div id="loadingProgress" class="progress">
             <span class="pregress-num">0%</span>
-          <div class="progress-bar" style="0%"></div>
+          <div class="progress-bar" style="width:0%"></div>
         </div>
         <span id="loadingIcon"></span>
+        <button id="starPageBtn" class="star-btn" style="display: none;">开始</button>
       </div>
     </div>
+
     <!-- 动画 -->
     <div id="bm" style="overflow: hidden;"></div>
     <div id="text">
@@ -65,9 +66,11 @@
     <div class="page" style="height: 10000px">
     </div>
     <div id="pageY" style="position: fixed;top: 0;"></div>
+
     <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script src="three/jquery-3.3.1.min.js"></script>
     <script src="three/bodymovin.js"></script>
+    <script src="js/preLoadImg.js"></script>
     <script src="js/float_font.js"></script>
     <script src="js/index.js?v=2"></script>
 </body>
