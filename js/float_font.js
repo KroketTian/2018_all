@@ -38,15 +38,17 @@ function floatFont(option){
     }
     // 抛出外部执行
     // 初始化，把jqDom的文字动画添加到frameList里面
-    function setTextAnimate(jqDom,startPage,keepTime) {
+    function setTextAnimate(jqDom,startPage,endTime) {
         var oneTextTime = 100;
 
         var textLength = jqDom.children('span').length;
         var allTime = oneTextTime * textLength;
+        var keepTime = endTime - startPage;
+        var jqDom = jqDom;
 
         // 初始化frameList
-        if (frameList.length < (startPage + 10 + textLength + keepTime)){
-            for(var addI = frameList.length ; addI < (startPage + 10 + textLength + keepTime) ; addI++){
+        if (frameList.length <= (startPage + 10 + textLength + keepTime)){
+            for(var addI = frameList.length ; addI <= (startPage + 10 + textLength + keepTime) ; addI++){
                 frameList.push([]);
             }
         }

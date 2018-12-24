@@ -14,6 +14,9 @@
         display: inline-block;
         transition: .1s;
     }
+    .text-block {
+        position: absolute;
+    }
     .text-animate-0{
         transform: translate(0px,-60px) rotate(60deg);
         opacity: 0; 
@@ -58,3 +61,97 @@
         transform: translate(0px,-0px) rotate(0deg);
         opacity: 1; 
     }
+
+.wang-text {
+    left: 13%;
+    top: 70%;
+}
+.miao-text-1 {
+    top: 30%;
+    left: 20%;
+}
+.miao-text-2 {
+    top: 17%;
+    left: 20%;
+}
+.fu-text-1 {
+    top: 20%;
+    left: 11%;
+}
+.fu-text-2 {
+    top: 55%;
+    left: 12%;
+}
+.yu-text-1 {
+    top: 20%;
+    left: 14%;
+}
+.yu-text-2 {
+    top: 26%;
+    left: 11%;
+}
+.gui-text-1 {
+    top: 20%;
+    left: 18%;
+}
+.gui-text-2 {
+    top: 70%;
+    left: 14%;
+}
+.he-text {
+    top: 70%;
+    left: 17%;
+}
+.shen-text {
+    top: 46%;
+    left: 19%;
+}
+.yi-text {
+    top: 40%;
+    left: 22%;
+}
+.long-text {
+    top: 70%;
+    left: 31%;
+}
+.jiu-text-1 {
+    top: 57%;
+    left: 20%;
+}
+.jiu-text-2 {
+    top: 46%;
+    left: 15%;
+}
+.xiao-text-1 {
+    top: 73%;
+    left: 15%;
+}
+.xiao-text-2 {
+    top: 50%;
+    left: 10%;
+}
+.jian-text-1 {
+    top: 26%;
+    left: 22%;
+}
+.jian-text-2 {
+    top: 26%;
+    left: 22%;
+}
+.jian-text-3 {
+    top: 26%;
+    left: 22%;
+}
+.tie-text {
+    top: 18%;
+    left: 11%;
+}
+.yin-text {
+    top: 49%;
+    width: 1px;
+    left: 16%;
+}
+.end-text {
+    top: 28%;
+    left: 12%;
+}

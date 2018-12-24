@@ -23,6 +23,12 @@
 
 </head>
 <body style="background: #000;">
+    <!-- 音乐 -->
+    <div id="audioBlock">
+        <audio id="bgmAudio" controls="controls" preload loop="loop" hidden>
+            <source src="audio/bgm.mp3" type="audio/mp3"  autoplay="true"/>
+        </audio>
+    </div>
     <!-- <div class="audioBtn-block" onClick="stopAndPlayAllAudio()">
         <button id="audioBtn" class="audio-no" style="background: url('images/music_icon.png?v=2') 0% 100% / cover"></button>
         <div id="musicing" class="musicing-bg" style="display: none;"></div>
@@ -42,34 +48,499 @@
     <!-- 动画 -->
     <div id="bm" style="overflow: hidden;"></div>
     <div id="text">
-        <div class="text-block" style="position: absolute;top: 30rem;">
+        <div class="wang-text text-block">
+            <span class="text-animate-0">站</span>
+            <span class="text-animate-0">在</span>
+            <span class="text-animate-0">2018</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">年</span>
+            <span class="text-animate-0">尾</span><br/>
+
+            <span class="text-animate-0">回</span>
+            <span class="text-animate-0">望</span>
+            <span class="text-animate-0">这</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">年</span><br/>
+
+            <span class="text-animate-0">给</span>
+            <span class="text-animate-0">你</span>
+            <span class="text-animate-0">留</span>
+            <span class="text-animate-0">下</span>
+            <span class="text-animate-0">了</span>
+            <span class="text-animate-0">什</span>
+            <span class="text-animate-0">么</span>
+            <span class="text-animate-0">？</span>
+        </div>
+        <div class="miao-text-1 text-block">
+            <span class="text-animate-0">新</span>
+            <span class="text-animate-0">年</span>
+            <span class="text-animate-0">伊</span>
+            <span class="text-animate-0">始</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">万</span>
+            <span class="text-animate-0">象</span>
+            <span class="text-animate-0">更</span>
+            <span class="text-animate-0">新</span>
+        </div>
+        <div class="miao-text-2 text-block">
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">则</span>
+            <span class="text-animate-0">通</span>
+            <span class="text-animate-0">知</span>
+            <span class="text-animate-0">在</span>
+            <span class="text-animate-0">中</span>
+            <span class="text-animate-0">央</span>
+            <span class="text-animate-0">下</span>
+            <span class="text-animate-0">发</span><br/>
+
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">次</span>
+            <span class="text-animate-0">会</span>
+            <span class="text-animate-0">议</span>
+            <span class="text-animate-0">在</span>
+            <span class="text-animate-0">佛</span>
+            <span class="text-animate-0">山</span>
+            <span class="text-animate-0">召</span>
+            <span class="text-animate-0">开</span><br/>
+
+            <span class="text-animate-0">改</span>
+            <span class="text-animate-0">变</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">从</span>
+            <span class="text-animate-0">此</span>
+            <span class="text-animate-0">发</span>
+            <span class="text-animate-0">生</span>
+        </div>
+        <div class="fu-text-1 text-block">
+            <span class="text-animate-0">就</span>
+            <span class="text-animate-0">像</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">滴</span>
+            <span class="text-animate-0">水</span>
+            <span class="text-animate-0">融</span>
+            <span class="text-animate-0">入</span>
+            <span class="text-animate-0">另</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">滴</span>
+            <span class="text-animate-0">水</span><br/>
+
+            <span class="text-animate-0">就</span>
+            <span class="text-animate-0">像</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">束</span>
+            <span class="text-animate-0">光</span>
+            <span class="text-animate-0">簇</span>
+            <span class="text-animate-0">拥</span>
+            <span class="text-animate-0">着</span>
+            <span class="text-animate-0">另</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">束</span>
+            <span class="text-animate-0">光</span>
+        </div>
+        <div class="fu-text-2 text-block">
+            <span class="text-animate-0">越</span>
+            <span class="text-animate-0">来</span>
+            <span class="text-animate-0">越</span>
+            <span class="text-animate-0">多</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">佛</span>
+            <span class="text-animate-0">山</span>
+            <span class="text-animate-0">人</span>
+            <span class="text-animate-0">点</span>
+            <span class="text-animate-0">亮</span>
+            <span class="text-animate-0">自</span>
+            <span class="text-animate-0">己</span><br/>
+
+            <span class="text-animate-0">照</span>
+            <span class="text-animate-0">亮</span>
+            <span class="text-animate-0">陌</span>
+            <span class="text-animate-0">生</span>
+            <span class="text-animate-0">人</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">生</span>
+            <span class="text-animate-0">活</span>
+        </div>
+        <div class="yu-text-1 text-block">
+            <span class="text-animate-0">那</span>
+            <span class="text-animate-0">雨</span>
+            <span class="text-animate-0">中</span>
+            <span class="text-animate-0">伸</span>
+            <span class="text-animate-0">过</span>
+            <span class="text-animate-0">来</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">双</span>
+            <span class="text-animate-0">手</span><br/>
+
+            <span class="text-animate-0">那</span>
+            <span class="text-animate-0">风</span>
+            <span class="text-animate-0">中</span>
+            <span class="text-animate-0">飘</span>
+            <span class="text-animate-0">飞</span>
+            <span class="text-animate-0">着</span>
+            <span class="text-animate-0">母</span>
+            <span class="text-animate-0">亲</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">白</span>
+            <span class="text-animate-0">发</span>
+        </div>
+        <div class="yu-text-2 text-block">
+            <span class="text-animate-0">那</span>
+            <span class="text-animate-0">年</span>
+            <span class="text-animate-0">少</span>
+            <span class="text-animate-0">时</span>
+            <span class="text-animate-0">光</span>
+            <span class="text-animate-0">最</span>
+            <span class="text-animate-0">拼</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">次</span>
+            <span class="text-animate-0">奋</span>
+            <span class="text-animate-0">斗</span><br/>
+
+            <span class="text-animate-0">对</span>
+            <span class="text-animate-0">他</span>
+            <span class="text-animate-0">们</span>
+            <span class="text-animate-0">道</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">声</span>
+            <span class="text-animate-0">：</span>
+            <span class="text-animate-0">还</span>
+            <span class="text-animate-0">好</span>
+            <span class="text-animate-0">你</span>
+            <span class="text-animate-0">在</span>
+        </div>
+        <div class="gui-text-1 text-block">
+            
+            <span class="text-animate-0">从</span>
+            <span class="text-animate-0">不</span>
+            <span class="text-animate-0">缺</span>
+            <span class="text-animate-0">少</span>
+            <span class="text-animate-0">撑</span>
+            <span class="text-animate-0">下</span>
+            <span class="text-animate-0">去</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">勇</span>
+            <span class="text-animate-0">气</span>
+        </div>
+        <div class="gui-text-2 text-block">
+            
+            <span class="text-animate-0">因</span>
+            <span class="text-animate-0">为</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">出</span>
+            <span class="text-animate-0">发</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">那</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">瞬</span><br/>
+
+            <span class="text-animate-0">整</span>
+            <span class="text-animate-0">个</span>
+            <span class="text-animate-0">城</span>
+            <span class="text-animate-0">市</span>
+            <span class="text-animate-0">已</span>
+            <span class="text-animate-0">将</span>
+            <span class="text-animate-0">我</span>
+            <span class="text-animate-0">拥</span>
+            <span class="text-animate-0">抱</span>
+        </div>
+        <div class="he-text text-block">
+            
+            <span class="text-animate-0">且</span>
+            <span class="text-animate-0">让</span>
+            <span class="text-animate-0">我</span>
+            <span class="text-animate-0">们</span>
+            <span class="text-animate-0">伸</span>
+            <span class="text-animate-0">出</span>
+            <span class="text-animate-0">手</span><br/>
+
+            <span class="text-animate-0">握</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">握</span><br/>
+
+            <span class="text-animate-0">共</span>
+            <span class="text-animate-0">同</span>
+            <span class="text-animate-0">穿</span>
+            <span class="text-animate-0">越</span>
+            <span class="text-animate-0">这</span>
+            <span class="text-animate-0">时</span>
+            <span class="text-animate-0">光</span>
+            <span class="text-animate-0">之</span>
+            <span class="text-animate-0">海</span>
+        </div>
+        <div class="shen-text text-block">
+            
+            <span class="text-animate-0">再</span>
+            <span class="text-animate-0">见</span>
+            <span class="text-animate-0">了</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">身</span>
+            <span class="text-animate-0">份</span>
+            <span class="text-animate-0">证</span><br/>
+
             <span class="text-animate-0">你</span>
             <span class="text-animate-0">好</span>
-            <span class="text-animate-0">啊</span>
-            <span class="text-animate-0">巴</span>
-            <span class="text-animate-0">啦</span>
-            <span class="text-animate-0">啦</span>
-            <span class="text-animate-0">你</span><br/>
-            <span class="text-animate-0">好</span>
-            <span class="text-animate-0">啊</span>
-            <span class="text-animate-0">巴</span>
-            <span class="text-animate-0">啦</span>
-            <span class="text-animate-0">啦</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">指</span>
+            <span class="text-animate-0">尖</span>
+            <span class="text-animate-0">服</span>
+            <span class="text-animate-0">务</span><br/>
+
+            <span class="text-animate-0">所</span>
+            <span class="text-animate-0">有</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">改</span>
+            <span class="text-animate-0">变</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">为</span>
+            <span class="text-animate-0">了</span>
+            <span class="text-animate-0">让</span>
             <span class="text-animate-0">你</span>
+            <span class="text-animate-0">获</span>
+            <span class="text-animate-0">得</span><br/>
+
+            <span class="text-animate-0">更</span>
+            <span class="text-animate-0">便</span>
+            <span class="text-animate-0">利</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">生</span>
+            <span class="text-animate-0">活</span>
+        </div>
+        <div class="yi-text text-block">
+            
+            <span class="text-animate-0">正</span>
+            <span class="text-animate-0">如</span>
+            <span class="text-animate-0">短</span>
+            <span class="text-animate-0">暂</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">阵</span>
+            <span class="text-animate-0">痛</span><br/>
+
+            <span class="text-animate-0">是</span>
+            <span class="text-animate-0">在</span>
+            <span class="text-animate-0">谱</span>
+            <span class="text-animate-0">写</span>
+            <span class="text-animate-0">更</span>
             <span class="text-animate-0">好</span>
-            <span class="text-animate-0">啊</span>
-            <span class="text-animate-0">巴</span>
-            <span class="text-animate-0">啦</span>
-            <span class="text-animate-0">啦</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">未</span>
+            <span class="text-animate-0">来</span>
+        </div>
+        <div class="long-text text-block">
+            
+            <span class="text-animate-0">共</span>
+            <span class="text-animate-0">同</span>
+            <span class="text-animate-0">见</span>
+            <span class="text-animate-0">证</span>
+            <span class="text-animate-0">荣</span>
+            <span class="text-animate-0">耀</span><br/>
+
+            <span class="text-animate-0">重</span>
+            <span class="text-animate-0">回</span>
+            <span class="text-animate-0">世</span>
+            <span class="text-animate-0">界</span>
+            <span class="text-animate-0">之</span>
+            <span class="text-animate-0">巅</span>
+        </div>
+        <div class="jiu-text-1 text-block">
+            
+            <span class="text-animate-0">纵</span>
+            <span class="text-animate-0">此</span>
+            <span class="text-animate-0">去</span>
+            <span class="text-animate-0">别</span>
+            <span class="text-animate-0">离</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">不</span>
+            <span class="text-animate-0">知</span>
+            <span class="text-animate-0">归</span>
+            <span class="text-animate-0">期</span>
+        </div>
+        <div class="jiu-text-2 text-block">
+            
+            <span class="text-animate-0">但</span>
+            <span class="text-animate-0">是</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">佛</span>
+            <span class="text-animate-0">山</span>
+            <span class="text-animate-0">人</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">记</span>
+            <span class="text-animate-0">忆</span>
+            <span class="text-animate-0">中</span><br/>
+            
+            <span class="text-animate-0">永</span>
+            <span class="text-animate-0">远</span>
+            <span class="text-animate-0">都</span>
+            <span class="text-animate-0">会</span>
+            <span class="text-animate-0">有</span>
+            <span class="text-animate-0">属</span>
+            <span class="text-animate-0">于</span>
+            <span class="text-animate-0">它</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">角</span>
+        </div>
+        <div class="xiao-text-1 text-block">
+            
+            <span class="text-animate-0">没</span>
+            <span class="text-animate-0">有</span>
+            <span class="text-animate-0">哪</span>
+            <span class="text-animate-0">个</span>
+            <span class="text-animate-0">黎</span>
+            <span class="text-animate-0">明</span>
+            <span class="text-animate-0">能</span>
+            <span class="text-animate-0">阻</span>
+            <span class="text-animate-0">止</span>
+            <span class="text-animate-0">阳</span>
+            <span class="text-animate-0">光</span>
+        </div>
+        <div class="xiao-text-2 text-block">
+            
+            <span class="text-animate-0">旧</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">刚</span>
+            <span class="text-animate-0">刚</span>
+            <span class="text-animate-0">被</span>
+            <span class="text-animate-0">颠</span>
+            <span class="text-animate-0">覆</span>
+            
+            <span class="text-animate-0">就</span>
+            <span class="text-animate-0">有</span>
+            <span class="text-animate-0">新</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">正</span>
+            <span class="text-animate-0">在</span>
+            <span class="text-animate-0">诞</span>
+            <span class="text-animate-0">生</span>
+        </div>
+        <div class="jian-text-1 text-block">
+            
+            <span class="text-animate-0">在</span>
+            <span class="text-animate-0">钢</span>
+            <span class="text-animate-0">筋</span>
+            <span class="text-animate-0">水</span>
+            <span class="text-animate-0">泥</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">城</span>
+            <span class="text-animate-0">市</span>
+            <span class="text-animate-0">里</span>
+        </div>
+        <div class="jian-text-2 text-block">
+            
+            <span class="text-animate-0">许</span>
+            <span class="text-animate-0">你</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">处</span>
+            <span class="text-animate-0">文</span>
+            <span class="text-animate-0">化</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">绿</span>
+            <span class="text-animate-0">洲</span>
+        </div>
+        <div class="jian-text-3 text-block">
+            
+            <span class="text-animate-0">让</span>
+            <span class="text-animate-0">你</span>
+            <span class="text-animate-0">得</span>
+            <span class="text-animate-0">以</span>
+            <span class="text-animate-0">诗</span>
+            <span class="text-animate-0">意</span>
+            <span class="text-animate-0">地</span>
+            <span class="text-animate-0">栖</span>
+            <span class="text-animate-0">居</span>
+        </div>
+        <div class="tie-text text-block">
+            
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">起</span>
+            <span class="text-animate-0">飞</span>
+            <span class="text-animate-0">过</span>
+            <span class="text-animate-0">高</span>
+            <span class="text-animate-0">山</span><br/>
+
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">起</span>
+            <span class="text-animate-0">跨</span>
+            <span class="text-animate-0">越</span>
+            <span class="text-animate-0">海</span>
+            <span class="text-animate-0">洋</span><br/>
+
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">路</span>
+            <span class="text-animate-0">同</span>
+            <span class="text-animate-0">行</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">向</span>
+            <span class="text-animate-0">着</span>
+            <span class="text-animate-0">远</span>
+            <span class="text-animate-0">方</span>
+        </div>
+        <div class="yin-text text-block">
+            
+            <span class="text-animate-0">在</span>
+            <span class="text-animate-0">城</span>
+            <span class="text-animate-0">市</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">上</span>
+            <span class="text-animate-0">空</span><br/>
+
+            <span class="text-animate-0">再</span>
+            <span class="text-animate-0">次</span>
+            <span class="text-animate-0">星</span>
+            <span class="text-animate-0">光</span>
+            <span class="text-animate-0">璀</span>
+            <span class="text-animate-0">璨</span>
+        </div>
+        <div class="end-text text-block">
+            
+            <span class="text-animate-0">今</span>
+            <span class="text-animate-0">天</span><br/>
+
+            <span class="text-animate-0">时</span>
+            <span class="text-animate-0">间</span>
+            <span class="text-animate-0">再</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">次</span>
+            <span class="text-animate-0">开</span>
+            <span class="text-animate-0">始</span><br/>
+
+            <span class="text-animate-0">800</span>
+            <span class="text-animate-0">万</span>
+            <span class="text-animate-0">佛</span>
+            <span class="text-animate-0">山</span>
+            <span class="text-animate-0">人</span>
+            <span class="text-animate-0">再</span>
+            <span class="text-animate-0">次</span>
+            <span class="text-animate-0">出</span>
+            <span class="text-animate-0">发</span><br/>
+
+            <span class="text-animate-0">走</span>
+            <span class="text-animate-0">向</span>
+            <span class="text-animate-0">新</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">一</span>
+            <span class="text-animate-0">年</span>
+            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">新</span>
+            <span class="text-animate-0">的</span>
+            <span class="text-animate-0">时</span>
+            <span class="text-animate-0">代</span>
         </div>
     </div>
-    <div class="page" style="height: 10000px">
+    <div class="page" style="height: 100000px">
     </div>
     <div id="pageY" style="position: fixed;top: 0;"></div>
+    <!-- 音乐 -->
+    <div class="audioBtn-block" onClick="stopAndPlayAllAudio()">
+        <button id="audioBtn" class="audio-no" style="background: url('images/music_icon.png?v=0.1') 0% 100% / cover"></button>
+        <div id="musicing" class="musicing-bg" style="display: none;"></div>
+    </div>
 
     <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script src="three/jquery-3.3.1.min.js"></script>
     <script src="three/bodymovin.js"></script>
+    <script src="js/audioPlay.js"></script>
     <script src="js/preLoadImg.js"></script>
     <script src="js/float_font.js"></script>
     <script src="js/index.js?v=2"></script>
