@@ -10029,7 +10029,7 @@ CVImageElement.prototype.initElement = SVGShapeElement.prototype.initElement;
 CVImageElement.prototype.prepareFrame = IImageElement.prototype.prepareFrame;
 
 CVImageElement.prototype.imageLoaded = function() {
-    this.globalData.elementLoaded();
+    this.globalData.elementLoaded();z
     if(this.assetData.w !== this.img.width || this.assetData.h !== this.img.height){
         var canvas = createTag('canvas');
         canvas.width = this.assetData.w;

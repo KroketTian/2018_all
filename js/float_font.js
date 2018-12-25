@@ -47,8 +47,8 @@ function floatFont(option){
         var jqDom = jqDom;
 
         // 初始化frameList
-        if (frameList.length <= (startPage + 10 + textLength + keepTime)){
-            for(var addI = frameList.length ; addI <= (startPage + 10 + textLength + keepTime) ; addI++){
+        if (frameList.length <= (startPage + 20 + textLength + keepTime)){
+            for(var addI = frameList.length ; addI <= (startPage + 20 + textLength + keepTime) ; addI++){
                 frameList.push([]);
             }
         }
@@ -56,11 +56,13 @@ function floatFont(option){
         for(var spanI = 0 ; spanI < textLength ; spanI++){
             var starSpanI = Math.floor(Math.random()*10);
             for(var i = 0 ; i <= 10 ; i++){
-                frameList[startPage + i + starSpanI].push({
-                    fun:oneTextAnimate,
-                    parameter:[jqDom.children('span').eq(spanI),i],
-                    callback:function(){},
-                })
+                if(startPage >= 0){
+                    frameList[startPage + i + starSpanI].push({
+                        fun:oneTextAnimate,
+                        parameter:[jqDom.children('span').eq(spanI),i],
+                        callback:function(){},
+                    })
+                }
                 frameList[startPage - i + starSpanI + keepTime +10].push({
                     fun:oneTextAnimate,
                     parameter:[jqDom.children('span').eq(spanI),i],

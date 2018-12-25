@@ -17,6 +17,7 @@
         font-family: "微软雅黑 Regular","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
     }
 </style>
+<link rel="stylesheet" href="http://at.alicdn.com/t/font_983605_co8dldi4w5t.css"/>
 <link rel="stylesheet" type="text/css" href="three/animate.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css?v=2"/>
 <link rel="stylesheet" type="text/css" href="css/float_font.css?v=2"/>
@@ -26,7 +27,7 @@
     <!-- 音乐 -->
     <div id="audioBlock">
         <audio id="bgmAudio" controls="controls" preload loop="loop" hidden>
-            <source src="audio/bgm.mp3" type="audio/mp3"  autoplay="true"/>
+            <source src="audio/bgm.mp3" loop="loop" type="audio/mp3"/>
         </audio>
     </div>
     <!-- <div class="audioBtn-block" onClick="stopAndPlayAllAudio()">
@@ -41,13 +42,28 @@
           <div class="progress-bar" style="width:0%"></div>
         </div>
         <span id="loadingIcon"></span>
-        <button id="starPageBtn" class="star-btn" style="display: none;">开始</button>
       </div>
+    </div>
+    <div id="startPage" class="loading-page" style="display: none;">
+        <button id="starPageBtn" class="star-btn" style="">开始</button>
     </div>
 
     <!-- 动画 -->
-    <div id="bm" style="overflow: hidden;"></div>
+
+    <div id="bm" style="overflow: hidden;">
+        <div id="startBg" class="bg"></div>
+    </div>
     <div id="text">
+        <div class="tip-text text-block">
+            <span class="text-animate-10"><i class="iconfont icon-up arrow-up"></i></span>
+            <span class="text-animate-10">向</span>
+            <span class="text-animate-10">上</span>
+            <span class="text-animate-10">划</span>
+            <span class="text-animate-10">开</span>
+            <span class="text-animate-10">始</span>
+            <span class="text-animate-10">回</span>
+            <span class="text-animate-10">望</span>
+        </div>
         <div class="wang-text text-block">
             <span class="text-animate-0">站</span>
             <span class="text-animate-0">在</span>
@@ -291,8 +307,8 @@
             <span class="text-animate-0">有</span>
             <span class="text-animate-0">的</span>
             <span class="text-animate-0">改</span>
-            <span class="text-animate-0">变</span>
-            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">变</span><br/>
+
             <span class="text-animate-0">为</span>
             <span class="text-animate-0">了</span>
             <span class="text-animate-0">让</span>
@@ -344,7 +360,6 @@
             <span class="text-animate-0">巅</span>
         </div>
         <div class="jiu-text-1 text-block">
-            
             <span class="text-animate-0">纵</span>
             <span class="text-animate-0">此</span>
             <span class="text-animate-0">去</span>
@@ -403,7 +418,7 @@
             <span class="text-animate-0">刚</span>
             <span class="text-animate-0">被</span>
             <span class="text-animate-0">颠</span>
-            <span class="text-animate-0">覆</span>
+            <span class="text-animate-0">覆</span><br/>
             
             <span class="text-animate-0">就</span>
             <span class="text-animate-0">有</span>
@@ -476,15 +491,16 @@
             <span class="text-animate-0">远</span>
             <span class="text-animate-0">方</span>
         </div>
-        <div class="yin-text text-block">
+        <div class="yin-text-1 text-block">
             
             <span class="text-animate-0">在</span>
             <span class="text-animate-0">城</span>
             <span class="text-animate-0">市</span>
             <span class="text-animate-0">的</span>
             <span class="text-animate-0">上</span>
-            <span class="text-animate-0">空</span><br/>
-
+            <span class="text-animate-0">空</span>
+        </div>
+        <div class="yin-text-2 text-block">
             <span class="text-animate-0">再</span>
             <span class="text-animate-0">次</span>
             <span class="text-animate-0">星</span>
@@ -509,7 +525,8 @@
             <span class="text-animate-0">万</span>
             <span class="text-animate-0">佛</span>
             <span class="text-animate-0">山</span>
-            <span class="text-animate-0">人</span>
+            <span class="text-animate-0">人</span><br/>
+
             <span class="text-animate-0">再</span>
             <span class="text-animate-0">次</span>
             <span class="text-animate-0">出</span>
@@ -520,15 +537,15 @@
             <span class="text-animate-0">新</span>
             <span class="text-animate-0">的</span>
             <span class="text-animate-0">一</span>
-            <span class="text-animate-0">年</span>
-            <span class="text-animate-0">，</span>
+            <span class="text-animate-0">年</span><br/>
+
             <span class="text-animate-0">新</span>
             <span class="text-animate-0">的</span>
             <span class="text-animate-0">时</span>
             <span class="text-animate-0">代</span>
         </div>
     </div>
-    <div class="page" style="height: 100000px">
+    <div id="scrollPage" class="page" style="height: 50000px;display: none;">
     </div>
     <div id="pageY" style="position: fixed;top: 0;"></div>
     <!-- 音乐 -->
@@ -539,7 +556,7 @@
 
     <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script src="three/jquery-3.3.1.min.js"></script>
-    <script src="three/bodymovin.js"></script>
+    <script src="three/bodymovin.js?v=2"></script>
     <script src="js/audioPlay.js"></script>
     <script src="js/preLoadImg.js"></script>
     <script src="js/float_font.js"></script>
